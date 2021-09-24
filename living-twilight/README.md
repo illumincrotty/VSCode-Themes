@@ -6,13 +6,12 @@ Living Twilight is a crepuscular theme for the wee hours of the morning and nigh
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![benchmark](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/Screenshot%202021-09-24%20at%2002-04-48%20Code%20Samples.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![generator](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/generator.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![index.test.ts](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/Screenshot%202021-09-24%20at%2002-05-15%20Code%20Samples.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Color Reference
 

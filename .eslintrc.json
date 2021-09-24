@@ -572,7 +572,7 @@
 		//"ava/no-unknown-modifiers": "error", //✅ Prevent the use of unknown test modifiers
 		//"ava/prefer-async-await": "error", //✅ Prefer using async/await instead of returning a Promise
 		//"ava/prefer-t-regex": "error", //✅🔧 Prefer using t.regex() to test regular expressions
-		"ava/test-ended": "error", //✅ Ensure callback tests are explicitly ended
+		// "ava/test-ended": "error", //✅ Ensure callback tests are explicitly ended
 		"ava/test-title": "error", //✅ Ensure tests have a title
 		"ava/use-t": "error", //✅ Ensure test functions use t as their parameter
 		"ava/use-t-throws-async-well": "error", //✅🔧 Ensure that t.throwsAsync() and t.notThrowsAsync() are awaited

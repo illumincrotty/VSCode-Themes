@@ -3,21 +3,22 @@ import fs from 'node:fs';
 import path from 'node:path';
 import shiki from 'shiki';
 import { getSVGRenderer } from 'shiki-renderer-svg';
-const current = path.parse(import.meta.url);
+// const current = path.parse(import.meta.url);
 
 const wip = path.join(
 	process.cwd(),
-	'..',
+	'living-twilight',
 	'themes',
 	'living-twilight-color-theme.json'
 );
-console.log(wip);
 
 const main = async () => {
 	const highlighter = await shiki.getHighlighter({
 		// C:\Users\bcrot\Code\cliThemes\vscode-theme-deep-twilight\themes\living-twilight-color-theme.json
 		theme: JSON5.parse(fs.readFileSync(wip).toString()),
 	});
+
+	highlighter.getTheme();
 
 	const svgRenderer = await getSVGRenderer({
 		bg: highlighter.getBackgroundColor(),
@@ -33,8 +34,7 @@ const main = async () => {
 			.readFileSync(inputPath, 'utf-8')
 			.replaceAll('\t', '    ');
 
-		const [directory, file, extension] = [
-			path.dirname(inputPath),
+		const [file, extension] = [
 			path.basename(inputPath),
 			path.extname(inputPath).slice(1),
 		];
@@ -53,7 +53,7 @@ const main = async () => {
 			path.join(
 				'assets/code pictures',
 				`${file.slice(
-					file[0] === '.' ? 1 : 0,
+					file.startsWith('.') ? 1 : 0,
 					file.length - (extension.length + 1)
 				)}.svg`
 			),
