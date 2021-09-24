@@ -1,0 +1,31 @@
+{
+	"name": "living-twilight",
+	"publisher": "illumincrotty",
+	"displayName": "Living Twilight",
+	"description": "A theme for the wee hours of the morning and night",
+	"version": "0.0.1",
+	"repository": {},
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "vsce package -o build",
+		"vsce-list": "pnpm list --prod --json"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Living Twilight",
+				"uiTheme": "vs-dark",
+				"path": "./themes/living-twilight-color-theme.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.100.0"
+	}
+}

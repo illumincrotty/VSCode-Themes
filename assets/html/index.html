@@ -1,0 +1,103 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Code Samples</title>
+		<link rel="stylesheet" href="../styles/index.css" />
+		<script src="../../dist/imageify.js" type="module"></script>
+	</head>
+	<body>
+		<link rel="stylesheet" href="../styles/index.css" />
+		<h1>Code Samples</h1>
+		<section class="json">
+			<h2>.prettierrc.json</h2>
+			<pre
+				class="shiki"
+				style="background-color: #1b1b1d"
+			><code><span class="line"><span style="color: #BEBABF">{</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;$schema&quot;</span><span style="color: #BEBABF">: </span><span style="color: #61ED99">&quot;https://json.schemastore.org/prettierrc&quot;</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;arrowParens&quot;</span><span style="color: #BEBABF">: </span><span style="color: #61ED99">&quot;always&quot;</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;bracketSpacing&quot;</span><span style="color: #BEBABF">: </span><span style="color: #ED9961">true</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;tabWidth&quot;</span><span style="color: #BEBABF">: </span><span style="color: #ED9961">4</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;useTabs&quot;</span><span style="color: #BEBABF">: </span><span style="color: #ED9961">true</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;endOfLine&quot;</span><span style="color: #BEBABF">: </span><span style="color: #61ED99">&quot;auto&quot;</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;quoteProps&quot;</span><span style="color: #BEBABF">: </span><span style="color: #61ED99">&quot;consistent&quot;</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;singleQuote&quot;</span><span style="color: #BEBABF">: </span><span style="color: #ED9961">true</span><span style="color: #BEBABF">,</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">&quot;printWidth&quot;</span><span style="color: #BEBABF">: </span><span style="color: #ED9961">80</span></span>
+<span class="line"><span style="color: #BEBABF">}</span></span>
+<span class="line"></span></code></pre>
+		</section>
+		<section class="ts">
+			<h2>benchmark.ts</h2>
+			<pre
+				class="shiki"
+				style="background-color: #1b1b1d"
+			><code><span class="line"><span style="color: #DF61ED">import</span><span style="color: #BEBABF"> </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF"> </span><span style="color: #DF61ED">from</span><span style="color: #BEBABF"> </span><span style="color: #61ED99">&#39;benny&#39;</span><span style="color: #BEBABF">;</span></span>
+<span class="line"><span style="color: #DF61ED">import</span><span style="color: #BEBABF"> { </span><span style="color: #ED616F">summarize</span><span style="color: #BEBABF"> } </span><span style="color: #DF61ED">from</span><span style="color: #BEBABF"> </span><span style="color: #61ED99">&#39;./benchmarkUtilities&#39;</span><span style="color: #BEBABF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #888589; font-style: italic">/***************************************************************************************/</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*                                                                                     */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Divide by 2 Results:                                                             */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*                                                                                     */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Shift down &gt;&gt;:  1,388,798,255 operations/second ±  0.08% | Fastest               */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Divide:         1,388,083,491 operations/second ±  0.17% | 2nd | 0.05% slower    */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Shift down &gt;&gt;&gt;: 1,385,662,698 operations/second ±  0.17% | 3rd | 0.23% slower    */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Math imul:      1,373,828,684 operations/second ±  0.47% | 4th | 1.08% slower    */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*    Multiply .5:    1,372,609,724 operations/second ±  0.71% | 5th | 1.17% slower    */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/*                                                                                     */</span></span>
+<span class="line"><span style="color: #888589; font-style: italic">/***************************************************************************************/</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #DF61ED">void</span><span style="color: #BEBABF"> </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">suite</span><span style="color: #BEBABF">(</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #61ED99">&#39;Divide by 2&#39;</span><span style="color: #BEBABF">,</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #888589; font-style: italic">// Common</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">add</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;Multiply .5&#39;</span><span style="color: #BEBABF">, () </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">100</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">*</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">0.5</span><span style="color: #BEBABF">),</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">add</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;Divide&#39;</span><span style="color: #BEBABF">, () </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">100</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">/</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">2</span><span style="color: #BEBABF">),</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #888589; font-style: italic">// Bitwise</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">add</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;Shift down &gt;&gt;&#39;</span><span style="color: #BEBABF">, () </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">100</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">&gt;&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">2</span><span style="color: #BEBABF">),</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">add</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;Shift down &gt;&gt;&gt;&#39;</span><span style="color: #BEBABF">, () </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">100</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">&gt;&gt;&gt;</span><span style="color: #BEBABF"> </span><span style="color: #ED9961">2</span><span style="color: #BEBABF">),</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #888589; font-style: italic">// Other</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">add</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;Math imul&#39;</span><span style="color: #BEBABF">, () </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> </span><span style="color: #EDDF61">Math</span><span style="color: #BEBABF">.</span><span style="color: #61EDDF">imul</span><span style="color: #BEBABF">(</span><span style="color: #ED9961">100</span><span style="color: #BEBABF">, </span><span style="color: #ED9961">0.5</span><span style="color: #BEBABF">)),</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">bench</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">complete</span><span style="color: #BEBABF">(</span><span style="color: #ED616F">summarize</span><span style="color: #BEBABF">)</span></span>
+<span class="line"><span style="color: #BEBABF">);</span></span>
+<span class="line"></span></code></pre>
+		</section>
+		<section class="ts">
+			<h2>index.test.ts</h2>
+			<pre
+				class="shiki"
+				style="background-color: #1b1b1d"
+			><code><span class="line"><span style="color: #DF61ED">import</span><span style="color: #BEBABF"> { </span><span style="color: #ED616F">example</span><span style="color: #BEBABF"> } </span><span style="color: #DF61ED">from</span><span style="color: #BEBABF"> </span><span style="color: #61ED99">&#39;../src/example&#39;</span><span style="color: #BEBABF">;</span></span>
+<span class="line"><span style="color: #DF61ED">import</span><span style="color: #BEBABF"> </span><span style="color: #ED616F">test</span><span style="color: #BEBABF"> </span><span style="color: #DF61ED">from</span><span style="color: #BEBABF"> </span><span style="color: #61ED99">&#39;ava&#39;</span><span style="color: #BEBABF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #888589; font-style: italic">// Check for my sanity</span></span>
+<span class="line"><span style="color: #61B5ED">test</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;passing test&#39;</span><span style="color: #BEBABF">, (</span><span style="color: #ED616F; font-style: italic">t</span><span style="color: #BEBABF">) </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> {</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">pass</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;I sure hope it does&#39;</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61B5ED">test</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;should know truth values&#39;</span><span style="color: #BEBABF">, (</span><span style="color: #ED616F; font-style: italic">t</span><span style="color: #BEBABF">) </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> {</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">true</span><span style="color: #BEBABF">(</span><span style="color: #ED9961">true</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61B5ED">test</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;a number should be itself&#39;</span><span style="color: #BEBABF">, (</span><span style="color: #ED616F; font-style: italic">t</span><span style="color: #BEBABF">) </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> {</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">is</span><span style="color: #BEBABF">(</span><span style="color: #EDDF61">Math</span><span style="color: #BEBABF">.</span><span style="color: #ED9961">SQRT2</span><span style="color: #BEBABF">, </span><span style="color: #EDDF61">Math</span><span style="color: #BEBABF">.</span><span style="color: #ED9961">SQRT2</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">is</span><span style="color: #BEBABF">(</span><span style="color: #EDDF61">Number</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">parseInt</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;1&#39;</span><span style="color: #BEBABF">, </span><span style="color: #ED9961">10</span><span style="color: #BEBABF">), </span><span style="color: #ED9961">1</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61B5ED">test</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;can achieve full coverage&#39;</span><span style="color: #BEBABF">, (</span><span style="color: #ED616F; font-style: italic">t</span><span style="color: #BEBABF">) </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> {</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">is</span><span style="color: #BEBABF">(</span><span style="color: #ED616F">example</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">fiveFunction</span><span style="color: #BEBABF">(), </span><span style="color: #ED9961">5</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #61B5ED">test</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;can dynamically import fs&#39;</span><span style="color: #BEBABF">, </span><span style="color: #DF61ED">async</span><span style="color: #BEBABF"> (</span><span style="color: #ED616F; font-style: italic">t</span><span style="color: #BEBABF">) </span><span style="color: #DF61ED">=&gt;</span><span style="color: #BEBABF"> {</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #DF61ED">const</span><span style="color: #BEBABF"> </span><span style="color: #EDDF61">fs</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">=</span><span style="color: #BEBABF"> (</span><span style="color: #DF61ED">await</span><span style="color: #BEBABF"> </span><span style="color: #61B5ED">import</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;node:fs&#39;</span><span style="color: #BEBABF">)).</span><span style="color: #ED616F">promises</span><span style="color: #BEBABF">;</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #DF61ED">const</span><span style="color: #BEBABF"> </span><span style="color: #EDDF61">text</span><span style="color: #BEBABF"> </span><span style="color: #61EDDF">=</span><span style="color: #BEBABF"> </span><span style="color: #DF61ED">await</span><span style="color: #BEBABF"> </span><span style="color: #ED616F">fs</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">readFile</span><span style="color: #BEBABF">(</span><span style="color: #61ED99">&#39;./test/example.txt&#39;</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">    </span><span style="color: #ED616F">t</span><span style="color: #BEBABF">.</span><span style="color: #61B5ED">is</span><span style="color: #BEBABF">(</span><span style="color: #ED616F">text</span><span style="color: #BEBABF">.</span><span style="color: #EDDF61">BYTES_PER_ELEMENT</span><span style="color: #BEBABF">, </span><span style="color: #ED9961">1</span><span style="color: #BEBABF">);</span></span>
+<span class="line"><span style="color: #BEBABF">});</span></span>
+<span class="line"></span></code></pre>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<svg viewBox="0 0 814.7994079589844 705.5999999999999" width="814.7994079589844" height="705.5999999999999" xmlns="http://www.w3.org/2000/svg">
+<rect id="bg" fill="#1b1b1d" width="814.7994079589844" height="705.5999999999999" rx="4"></rect><g id="tokens" transform="translate(33.5999755859375, 39.199999999999996)"><text font-family="Fira Code" font-size="14" y="19.599999999999998">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">bench</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#DF61ED">from</tspan><tspan x="142.79989624023438" fill="#BEBABF"> </tspan><tspan x="151.19989013671875" fill="#61ED99">&#39;benny&#39;</tspan><tspan x="209.99984741210938" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="39.199999999999996">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#BEBABF">{ </tspan><tspan x="75.59994506835938" fill="#ED616F">summarize</tspan><tspan x="151.19989013671875" fill="#BEBABF"> </tspan><tspan x="159.59988403320312" fill="#BEBABF">} </tspan><tspan x="176.39987182617188" fill="#DF61ED">from</tspan><tspan x="209.99984741210938" fill="#BEBABF"> </tspan><tspan x="218.39984130859375" fill="#61ED99">&#39;./benchmarkUtilities&#39;</tspan><tspan x="403.19970703125" fill="#BEBABF">;</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="78.39999999999999">
+<tspan x="0" fill="#888589" font-style="italic">/***************************************************************************************/</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="97.99999999999999">
+<tspan x="0" fill="#888589" font-style="italic">/*                                                                                     */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="117.6">
+<tspan x="0" fill="#888589" font-style="italic">/*    Divide by 2 Results:                                                             */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="137.2">
+<tspan x="0" fill="#888589" font-style="italic">/*                                                                                     */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="156.79999999999998">
+<tspan x="0" fill="#888589" font-style="italic">/*    Shift down &gt;&gt;:  1,388,798,255 operations/second ±  0.08% | Fastest               */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="176.39999999999998">
+<tspan x="0" fill="#888589" font-style="italic">/*    Divide:         1,388,083,491 operations/second ±  0.17% | 2nd | 0.05% slower    */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="195.99999999999997">
+<tspan x="0" fill="#888589" font-style="italic">/*    Shift down &gt;&gt;&gt;: 1,385,662,698 operations/second ±  0.17% | 3rd | 0.23% slower    */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="215.59999999999997">
+<tspan x="0" fill="#888589" font-style="italic">/*    Math imul:      1,373,828,684 operations/second ±  0.47% | 4th | 1.08% slower    */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="235.2">
+<tspan x="0" fill="#888589" font-style="italic">/*    Multiply .5:    1,372,609,724 operations/second ±  0.71% | 5th | 1.17% slower    */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="254.79999999999998">
+<tspan x="0" fill="#888589" font-style="italic">/*                                                                                     */</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="274.4">
+<tspan x="0" fill="#888589" font-style="italic">/***************************************************************************************/</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="313.59999999999997">
+<tspan x="0" fill="#DF61ED">void</tspan><tspan x="33.5999755859375" fill="#BEBABF"> </tspan><tspan x="41.999969482421875" fill="#ED616F">bench</tspan><tspan x="83.99993896484375" fill="#BEBABF">.</tspan><tspan x="92.39993286132812" fill="#61B5ED">suite</tspan><tspan x="134.39990234375" fill="#BEBABF">(</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="333.2">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#61ED99">&#39;Divide by 2&#39;</tspan><tspan x="142.79989624023438" fill="#BEBABF">,</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="372.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#888589" font-style="italic">// Common</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="391.99999999999994">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">add</tspan><tspan x="109.19992065429688" fill="#BEBABF">(</tspan><tspan x="117.59991455078125" fill="#61ED99">&#39;Multiply .5&#39;</tspan><tspan x="226.79983520507812" fill="#BEBABF">, () </tspan><tspan x="268.7998046875" fill="#DF61ED">=&gt;</tspan><tspan x="285.59979248046875" fill="#BEBABF"> </tspan><tspan x="293.9997863769531" fill="#ED9961">100</tspan><tspan x="319.19976806640625" fill="#BEBABF"> </tspan><tspan x="327.5997619628906" fill="#61EDDF">*</tspan><tspan x="335.999755859375" fill="#BEBABF"> </tspan><tspan x="344.3997497558594" fill="#ED9961">0.5</tspan><tspan x="369.5997314453125" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="411.59999999999997">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">add</tspan><tspan x="109.19992065429688" fill="#BEBABF">(</tspan><tspan x="117.59991455078125" fill="#61ED99">&#39;Divide&#39;</tspan><tspan x="184.79986572265625" fill="#BEBABF">, () </tspan><tspan x="226.79983520507812" fill="#DF61ED">=&gt;</tspan><tspan x="243.59982299804688" fill="#BEBABF"> </tspan><tspan x="251.99981689453125" fill="#ED9961">100</tspan><tspan x="277.1997985839844" fill="#BEBABF"> </tspan><tspan x="285.59979248046875" fill="#61EDDF">/</tspan><tspan x="293.9997863769531" fill="#BEBABF"> </tspan><tspan x="302.3997802734375" fill="#ED9961">2</tspan><tspan x="310.7997741699219" fill="#BEBABF">),</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="450.79999999999995">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#888589" font-style="italic">// Bitwise</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="470.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">add</tspan><tspan x="109.19992065429688" fill="#BEBABF">(</tspan><tspan x="117.59991455078125" fill="#61ED99">&#39;Shift down &gt;&gt;&#39;</tspan><tspan x="243.59982299804688" fill="#BEBABF">, () </tspan><tspan x="285.59979248046875" fill="#DF61ED">=&gt;</tspan><tspan x="302.3997802734375" fill="#BEBABF"> </tspan><tspan x="310.7997741699219" fill="#ED9961">100</tspan><tspan x="335.999755859375" fill="#BEBABF"> </tspan><tspan x="344.3997497558594" fill="#61EDDF">&gt;&gt;</tspan><tspan x="361.1997375488281" fill="#BEBABF"> </tspan><tspan x="369.5997314453125" fill="#ED9961">2</tspan><tspan x="377.9997253417969" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="489.99999999999994">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">add</tspan><tspan x="109.19992065429688" fill="#BEBABF">(</tspan><tspan x="117.59991455078125" fill="#61ED99">&#39;Shift down &gt;&gt;&gt;&#39;</tspan><tspan x="251.99981689453125" fill="#BEBABF">, () </tspan><tspan x="293.9997863769531" fill="#DF61ED">=&gt;</tspan><tspan x="310.7997741699219" fill="#BEBABF"> </tspan><tspan x="319.19976806640625" fill="#ED9961">100</tspan><tspan x="344.3997497558594" fill="#BEBABF"> </tspan><tspan x="352.79974365234375" fill="#61EDDF">&gt;&gt;&gt;</tspan><tspan x="377.9997253417969" fill="#BEBABF"> </tspan><tspan x="386.39971923828125" fill="#ED9961">2</tspan><tspan x="394.7997131347656" fill="#BEBABF">),</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="529.1999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#888589" font-style="italic">// Other</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="548.8">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">add</tspan><tspan x="109.19992065429688" fill="#BEBABF">(</tspan><tspan x="117.59991455078125" fill="#61ED99">&#39;Math imul&#39;</tspan><tspan x="209.99984741210938" fill="#BEBABF">, () </tspan><tspan x="251.99981689453125" fill="#DF61ED">=&gt;</tspan><tspan x="268.7998046875" fill="#BEBABF"> </tspan><tspan x="277.1997985839844" fill="#EDDF61">Math</tspan><tspan x="310.7997741699219" fill="#BEBABF">.</tspan><tspan x="319.19976806640625" fill="#61EDDF">imul</tspan><tspan x="352.79974365234375" fill="#BEBABF">(</tspan><tspan x="361.1997375488281" fill="#ED9961">100</tspan><tspan x="386.39971923828125" fill="#BEBABF">, </tspan><tspan x="403.19970703125" fill="#ED9961">0.5</tspan><tspan x="428.3996887207031" fill="#BEBABF">)),</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="587.9999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">bench</tspan><tspan x="75.59994506835938" fill="#BEBABF">.</tspan><tspan x="83.99993896484375" fill="#61B5ED">complete</tspan><tspan x="151.19989013671875" fill="#BEBABF">(</tspan><tspan x="159.59988403320312" fill="#ED616F">summarize</tspan><tspan x="235.1998291015625" fill="#BEBABF">)</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="607.5999999999999">
+<tspan x="0" fill="#BEBABF">);</tspan>
+</text></g>
+</svg>

@@ -1,0 +1,163 @@
+<svg viewBox="0 0 999.5992736816406 1293.6" width="999.5992736816406" height="1293.6" xmlns="http://www.w3.org/2000/svg">
+<rect id="bg" fill="#1b1b1d" width="999.5992736816406" height="1293.6" rx="4"></rect><g id="tokens" transform="translate(33.5999755859375, 39.199999999999996)"><text font-family="Fira Code" font-size="14" y="19.599999999999998">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">fs</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#DF61ED">from</tspan><tspan x="117.59991455078125" fill="#BEBABF"> </tspan><tspan x="125.99990844726562" fill="#61ED99">&#39;node:fs&#39;</tspan><tspan x="201.599853515625" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="39.199999999999996">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">shiki</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#DF61ED">from</tspan><tspan x="142.79989624023438" fill="#BEBABF"> </tspan><tspan x="151.19989013671875" fill="#61ED99">&#39;shiki&#39;</tspan><tspan x="209.99984741210938" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="58.8">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#BEBABF">{ </tspan><tspan x="75.59994506835938" fill="#ED616F">getSVGRenderer</tspan><tspan x="193.19985961914062" fill="#BEBABF"> </tspan><tspan x="201.599853515625" fill="#BEBABF">} </tspan><tspan x="218.39984130859375" fill="#DF61ED">from</tspan><tspan x="251.99981689453125" fill="#BEBABF"> </tspan><tspan x="260.3998107910156" fill="#61ED99">&#39;shiki-renderer-svg&#39;</tspan><tspan x="428.3996887207031" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="78.39999999999999">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">JSON5</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#DF61ED">from</tspan><tspan x="142.79989624023438" fill="#BEBABF"> </tspan><tspan x="151.19989013671875" fill="#61ED99">&#39;json5&#39;</tspan><tspan x="209.99984741210938" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="97.99999999999999">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">path</tspan><tspan x="92.39993286132812" fill="#BEBABF"> </tspan><tspan x="100.7999267578125" fill="#DF61ED">from</tspan><tspan x="134.39990234375" fill="#BEBABF"> </tspan><tspan x="142.79989624023438" fill="#61ED99">&#39;node:path&#39;</tspan><tspan x="235.1998291015625" fill="#BEBABF">;</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="137.2">
+<tspan x="0" fill="#888589" font-style="italic">// This is the code used to generate the example images!</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="176.39999999999998">
+<tspan x="0" fill="#DF61ED">const</tspan><tspan x="41.999969482421875" fill="#BEBABF"> </tspan><tspan x="50.39996337890625" fill="#61B5ED">main</tspan><tspan x="83.99993896484375" fill="#BEBABF"> </tspan><tspan x="92.39993286132812" fill="#61EDDF">=</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#DF61ED">async</tspan><tspan x="151.19989013671875" fill="#BEBABF"> </tspan><tspan x="159.59988403320312" fill="#BEBABF">() </tspan><tspan x="184.79986572265625" fill="#DF61ED">=&gt;</tspan><tspan x="201.599853515625" fill="#BEBABF"> </tspan><tspan x="209.99984741210938" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="195.99999999999997">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#EDDF61">highlighter</tspan><tspan x="176.39987182617188" fill="#BEBABF"> </tspan><tspan x="184.79986572265625" fill="#61EDDF">=</tspan><tspan x="193.19985961914062" fill="#BEBABF"> </tspan><tspan x="201.599853515625" fill="#DF61ED">await</tspan><tspan x="243.59982299804688" fill="#BEBABF"> </tspan><tspan x="251.99981689453125" fill="#ED616F">shiki</tspan><tspan x="293.9997863769531" fill="#BEBABF">.</tspan><tspan x="302.3997802734375" fill="#61B5ED">getHighlighter</tspan><tspan x="419.99969482421875" fill="#BEBABF">({</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="215.59999999999997">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">theme</tspan><tspan x="109.19992065429688" fill="#BEBABF">: </tspan><tspan x="125.99990844726562" fill="#EDDF61">JSON5</tspan><tspan x="167.9998779296875" fill="#BEBABF">.</tspan><tspan x="176.39987182617188" fill="#61B5ED">parse</tspan><tspan x="218.39984130859375" fill="#BEBABF">(</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="235.2">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">fs</tspan><tspan x="117.59991455078125" fill="#BEBABF">.</tspan><tspan x="125.99990844726562" fill="#61B5ED">readFileSync</tspan><tspan x="226.79983520507812" fill="#BEBABF">(</tspan><tspan x="235.1998291015625" fill="#61ED99">&#39;themes</tspan><tspan x="293.9997863769531" fill="#61EDDF">\\</tspan><tspan x="310.7997741699219" fill="#61ED99">crepuscular-color-theme.json&#39;</tspan><tspan x="554.3995971679688" fill="#BEBABF">, </tspan><tspan x="571.1995849609375" fill="#61ED99">&#39;utf-8&#39;</tspan><tspan x="629.9995422363281" fill="#BEBABF">)</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="254.79999999999998">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="274.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="313.59999999999997">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#EDDF61">svgRenderer</tspan><tspan x="176.39987182617188" fill="#BEBABF"> </tspan><tspan x="184.79986572265625" fill="#61EDDF">=</tspan><tspan x="193.19985961914062" fill="#BEBABF"> </tspan><tspan x="201.599853515625" fill="#DF61ED">await</tspan><tspan x="243.59982299804688" fill="#BEBABF"> </tspan><tspan x="251.99981689453125" fill="#61B5ED">getSVGRenderer</tspan><tspan x="369.5997314453125" fill="#BEBABF">({</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="333.2">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">bg</tspan><tspan x="83.99993896484375" fill="#BEBABF">: </tspan><tspan x="100.7999267578125" fill="#ED616F">highlighter</tspan><tspan x="193.19985961914062" fill="#BEBABF">.</tspan><tspan x="201.599853515625" fill="#61B5ED">getBackgroundColor</tspan><tspan x="352.79974365234375" fill="#BEBABF">(),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="352.79999999999995">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">fontFamily</tspan><tspan x="151.19989013671875" fill="#BEBABF">: {</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="372.4">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">name</tspan><tspan x="134.39990234375" fill="#BEBABF">: </tspan><tspan x="151.19989013671875" fill="#61ED99">&#39;Fira Code&#39;</tspan><tspan x="243.59982299804688" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="391.99999999999994">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">cssURL</tspan><tspan x="151.19989013671875" fill="#BEBABF">: </tspan><tspan x="167.9998779296875" fill="#61ED99">&#39;https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap&#39;</tspan><tspan x="923.9993286132812" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="411.59999999999997">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#BEBABF">},</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="431.19999999999993">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">fontSize</tspan><tspan x="134.39990234375" fill="#BEBABF">: </tspan><tspan x="151.19989013671875" fill="#ED9961">14</tspan><tspan x="167.9998779296875" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="450.79999999999995">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">bgSideCharPadding</tspan><tspan x="209.99984741210938" fill="#BEBABF">: </tspan><tspan x="226.79983520507812" fill="#ED9961">5</tspan><tspan x="235.1998291015625" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="470.4">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">bgCornerRadius</tspan><tspan x="184.79986572265625" fill="#BEBABF">: </tspan><tspan x="201.599853515625" fill="#ED9961">20</tspan><tspan x="218.39984130859375" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="489.99999999999994">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="529.1999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#61B5ED">generateThemeSVG</tspan><tspan x="218.39984130859375" fill="#BEBABF"> </tspan><tspan x="226.79983520507812" fill="#61EDDF">=</tspan><tspan x="235.1998291015625" fill="#BEBABF"> </tspan><tspan x="243.59982299804688" fill="#BEBABF">(</tspan><tspan x="251.99981689453125" fill="#ED616F" font-style="italic">inputPath</tspan><tspan x="327.5997619628906" fill="#BEBABF">: </tspan><tspan x="344.3997497558594" fill="#EDDF61">string</tspan><tspan x="394.7997131347656" fill="#BEBABF">) </tspan><tspan x="411.5997009277344" fill="#DF61ED">=&gt;</tspan><tspan x="428.3996887207031" fill="#BEBABF"> </tspan><tspan x="436.7996826171875" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="548.8">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#DF61ED">const</tspan><tspan x="109.19992065429688" fill="#BEBABF"> </tspan><tspan x="117.59991455078125" fill="#EDDF61">_code</tspan><tspan x="159.59988403320312" fill="#BEBABF"> </tspan><tspan x="167.9998779296875" fill="#61EDDF">=</tspan><tspan x="176.39987182617188" fill="#BEBABF"> </tspan><tspan x="184.79986572265625" fill="#ED616F">fs</tspan><tspan x="201.599853515625" fill="#BEBABF">.</tspan><tspan x="209.99984741210938" fill="#61B5ED">readFileSync</tspan><tspan x="310.7997741699219" fill="#BEBABF">(</tspan><tspan x="319.19976806640625" fill="#ED616F">inputPath</tspan><tspan x="394.7997131347656" fill="#BEBABF">, </tspan><tspan x="411.5997009277344" fill="#61ED99">&#39;utf-8&#39;</tspan><tspan x="470.399658203125" fill="#BEBABF">);</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="587.9999999999999">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#DF61ED">const</tspan><tspan x="109.19992065429688" fill="#BEBABF"> </tspan><tspan x="117.59991455078125" fill="#BEBABF">[</tspan><tspan x="125.99990844726562" fill="#EDDF61">directory</tspan><tspan x="201.599853515625" fill="#BEBABF">, </tspan><tspan x="218.39984130859375" fill="#EDDF61">file</tspan><tspan x="251.99981689453125" fill="#BEBABF">, </tspan><tspan x="268.7998046875" fill="#EDDF61">extension</tspan><tspan x="344.3997497558594" fill="#BEBABF">] </tspan><tspan x="361.1997375488281" fill="#61EDDF">=</tspan><tspan x="369.5997314453125" fill="#BEBABF"> </tspan><tspan x="377.9997253417969" fill="#BEBABF">[</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="607.5999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">path</tspan><tspan x="134.39990234375" fill="#BEBABF">.</tspan><tspan x="142.79989624023438" fill="#61B5ED">dirname</tspan><tspan x="201.599853515625" fill="#BEBABF">(</tspan><tspan x="209.99984741210938" fill="#ED616F">inputPath</tspan><tspan x="285.59979248046875" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="627.1999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">path</tspan><tspan x="134.39990234375" fill="#BEBABF">.</tspan><tspan x="142.79989624023438" fill="#61B5ED">basename</tspan><tspan x="209.99984741210938" fill="#BEBABF">(</tspan><tspan x="218.39984130859375" fill="#ED616F">inputPath</tspan><tspan x="293.9997863769531" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="646.8">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">path</tspan><tspan x="134.39990234375" fill="#BEBABF">.</tspan><tspan x="142.79989624023438" fill="#61B5ED">extname</tspan><tspan x="201.599853515625" fill="#BEBABF">(</tspan><tspan x="209.99984741210938" fill="#ED616F">inputPath</tspan><tspan x="285.59979248046875" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="666.4">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#BEBABF">];</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="705.5999999999999">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">console</tspan><tspan x="125.99990844726562" fill="#BEBABF">.</tspan><tspan x="134.39990234375" fill="#61B5ED">log</tspan><tspan x="159.59988403320312" fill="#BEBABF">(</tspan><tspan x="167.9998779296875" fill="#ED616F">directory</tspan><tspan x="243.59982299804688" fill="#BEBABF">, </tspan><tspan x="260.3998107910156" fill="#ED616F">file</tspan><tspan x="293.9997863769531" fill="#BEBABF">);</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="744.8">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#DF61ED">const</tspan><tspan x="109.19992065429688" fill="#BEBABF"> </tspan><tspan x="117.59991455078125" fill="#EDDF61">tokens</tspan><tspan x="167.9998779296875" fill="#BEBABF"> </tspan><tspan x="176.39987182617188" fill="#61EDDF">=</tspan><tspan x="184.79986572265625" fill="#BEBABF"> </tspan><tspan x="193.19985961914062" fill="#ED616F">highlighter</tspan><tspan x="285.59979248046875" fill="#BEBABF">.</tspan><tspan x="293.9997863769531" fill="#61B5ED">codeToThemedTokens</tspan><tspan x="445.1996765136719" fill="#BEBABF">(</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="764.3999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">_code</tspan><tspan x="142.79989624023438" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="783.9999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">extension</tspan><tspan x="176.39987182617188" fill="#BEBABF">.</tspan><tspan x="184.79986572265625" fill="#61B5ED">slice</tspan><tspan x="226.79983520507812" fill="#BEBABF">(</tspan><tspan x="235.1998291015625" fill="#ED9961">1</tspan><tspan x="243.59982299804688" fill="#BEBABF">)</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="803.5999999999999">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="823.1999999999999">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#DF61ED">const</tspan><tspan x="109.19992065429688" fill="#BEBABF"> </tspan><tspan x="117.59991455078125" fill="#EDDF61">out</tspan><tspan x="142.79989624023438" fill="#BEBABF"> </tspan><tspan x="151.19989013671875" fill="#61EDDF">=</tspan><tspan x="159.59988403320312" fill="#BEBABF"> </tspan><tspan x="167.9998779296875" fill="#ED616F">svgRenderer</tspan><tspan x="260.3998107910156" fill="#BEBABF">.</tspan><tspan x="268.7998046875" fill="#61B5ED">renderToSVG</tspan><tspan x="361.1997375488281" fill="#BEBABF">(</tspan><tspan x="369.5997314453125" fill="#ED616F">tokens</tspan><tspan x="419.99969482421875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="842.8">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#ED616F">fs</tspan><tspan x="83.99993896484375" fill="#BEBABF">.</tspan><tspan x="92.39993286132812" fill="#61B5ED">writeFileSync</tspan><tspan x="201.599853515625" fill="#BEBABF">(</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="862.3999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">path</tspan><tspan x="134.39990234375" fill="#BEBABF">.</tspan><tspan x="142.79989624023438" fill="#61B5ED">join</tspan><tspan x="176.39987182617188" fill="#BEBABF">(</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="881.9999999999999">
+<tspan x="0" fill="#BEBABF">                </tspan><tspan x="134.39990234375" fill="#61ED99">&#39;assets/code pictures&#39;</tspan><tspan x="319.19976806640625" fill="#BEBABF">,</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="901.5999999999999">
+<tspan x="0" fill="#BEBABF">                </tspan><tspan x="134.39990234375" fill="#61ED99">`</tspan><tspan x="142.79989624023438" fill="#DF61ED">${</tspan><tspan x="159.59988403320312" fill="#ED616F">file</tspan><tspan x="193.19985961914062" fill="#BEBABF">.</tspan><tspan x="201.599853515625" fill="#61B5ED">slice</tspan><tspan x="243.59982299804688" fill="#BEBABF">(</tspan><tspan x="251.99981689453125" fill="#ED9961">0</tspan><tspan x="260.3998107910156" fill="#BEBABF">, </tspan><tspan x="277.1997985839844" fill="#ED616F">file</tspan><tspan x="310.7997741699219" fill="#BEBABF">.</tspan><tspan x="319.19976806640625" fill="#ED616F">length</tspan><tspan x="369.5997314453125" fill="#BEBABF"> </tspan><tspan x="377.9997253417969" fill="#61EDDF">-</tspan><tspan x="386.39971923828125" fill="#BEBABF"> </tspan><tspan x="394.7997131347656" fill="#ED616F">extension</tspan><tspan x="470.399658203125" fill="#BEBABF">.</tspan><tspan x="478.7996520996094" fill="#ED616F">length</tspan><tspan x="529.1996154785156" fill="#BEBABF">)</tspan><tspan x="537.599609375" fill="#DF61ED">}</tspan><tspan x="545.9996032714844" fill="#61ED99">.svg`</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="921.1999999999999">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#BEBABF">),</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="940.8">
+<tspan x="0" fill="#BEBABF">            </tspan><tspan x="100.7999267578125" fill="#ED616F">out</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="960.3999999999999">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="979.9999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#BEBABF">};</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="1019.1999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#EDDF61">source</tspan><tspan x="134.39990234375" fill="#BEBABF"> </tspan><tspan x="142.79989624023438" fill="#61EDDF">=</tspan><tspan x="151.19989013671875" fill="#BEBABF"> </tspan><tspan x="159.59988403320312" fill="#61ED99">&#39;assets/samples&#39;</tspan><tspan x="293.9997863769531" fill="#BEBABF">;</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="1058.3999999999999">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">for</tspan><tspan x="58.799957275390625" fill="#BEBABF"> </tspan><tspan x="67.199951171875" fill="#BEBABF">(</tspan><tspan x="75.59994506835938" fill="#DF61ED">const</tspan><tspan x="117.59991455078125" fill="#BEBABF"> </tspan><tspan x="125.99990844726562" fill="#EDDF61">file</tspan><tspan x="159.59988403320312" fill="#BEBABF"> </tspan><tspan x="167.9998779296875" fill="#DF61ED">of</tspan><tspan x="184.79986572265625" fill="#BEBABF"> </tspan><tspan x="193.19985961914062" fill="#ED616F">fs</tspan><tspan x="209.99984741210938" fill="#BEBABF">.</tspan><tspan x="218.39984130859375" fill="#61B5ED">readdirSync</tspan><tspan x="310.7997741699219" fill="#BEBABF">(</tspan><tspan x="319.19976806640625" fill="#ED616F">source</tspan><tspan x="369.5997314453125" fill="#BEBABF">)) {</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="1077.9999999999998">
+<tspan x="0" fill="#BEBABF">        </tspan><tspan x="67.199951171875" fill="#DF61ED">void</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#61B5ED">generateThemeSVG</tspan><tspan x="243.59982299804688" fill="#BEBABF">(</tspan><tspan x="251.99981689453125" fill="#ED616F">path</tspan><tspan x="285.59979248046875" fill="#BEBABF">.</tspan><tspan x="293.9997863769531" fill="#61B5ED">join</tspan><tspan x="327.5997619628906" fill="#BEBABF">(</tspan><tspan x="335.999755859375" fill="#ED616F">source</tspan><tspan x="386.39971923828125" fill="#BEBABF">, </tspan><tspan x="403.19970703125" fill="#ED616F">file</tspan><tspan x="436.7996826171875" fill="#BEBABF">));</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="1097.6">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#BEBABF">}</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="1136.8">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">return</tspan><tspan x="83.99993896484375" fill="#BEBABF"> </tspan><tspan x="92.39993286132812" fill="#EDDF61">Promise</tspan><tspan x="151.19989013671875" fill="#BEBABF">.</tspan><tspan x="159.59988403320312" fill="#61B5ED">resolve</tspan><tspan x="218.39984130859375" fill="#BEBABF">();</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="1156.3999999999999">
+<tspan x="0" fill="#BEBABF">};</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="1195.6">
+<tspan x="0" fill="#DF61ED">void</tspan><tspan x="33.5999755859375" fill="#BEBABF"> </tspan><tspan x="41.999969482421875" fill="#61B5ED">main</tspan><tspan x="75.59994506835938" fill="#BEBABF">();</tspan>
+</text></g>
+</svg>

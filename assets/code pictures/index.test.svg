@@ -1,0 +1,70 @@
+<svg viewBox="0 0 545.9996032714844 607.5999999999999" width="545.9996032714844" height="607.5999999999999" xmlns="http://www.w3.org/2000/svg">
+<rect id="bg" fill="#1b1b1d" width="545.9996032714844" height="607.5999999999999" rx="4"></rect><g id="tokens" transform="translate(33.5999755859375, 39.199999999999996)"><text font-family="Fira Code" font-size="14" y="19.599999999999998">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#BEBABF">{ </tspan><tspan x="75.59994506835938" fill="#ED616F">example</tspan><tspan x="134.39990234375" fill="#BEBABF"> </tspan><tspan x="142.79989624023438" fill="#BEBABF">} </tspan><tspan x="159.59988403320312" fill="#DF61ED">from</tspan><tspan x="193.19985961914062" fill="#BEBABF"> </tspan><tspan x="201.599853515625" fill="#61ED99">&#39;../src/example&#39;</tspan><tspan x="335.999755859375" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="39.199999999999996">
+<tspan x="0" fill="#DF61ED">import</tspan><tspan x="50.39996337890625" fill="#BEBABF"> </tspan><tspan x="58.799957275390625" fill="#ED616F">test</tspan><tspan x="92.39993286132812" fill="#BEBABF"> </tspan><tspan x="100.7999267578125" fill="#DF61ED">from</tspan><tspan x="134.39990234375" fill="#BEBABF"> </tspan><tspan x="142.79989624023438" fill="#61ED99">&#39;ava&#39;</tspan><tspan x="184.79986572265625" fill="#BEBABF">;</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="78.39999999999999">
+<tspan x="0" fill="#888589" font-style="italic">// Check for my sanity</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="97.99999999999999">
+<tspan x="0" fill="#61B5ED">test</tspan><tspan x="33.5999755859375" fill="#BEBABF">(</tspan><tspan x="41.999969482421875" fill="#61ED99">&#39;passing test&#39;</tspan><tspan x="159.59988403320312" fill="#BEBABF">, (</tspan><tspan x="184.79986572265625" fill="#ED616F" font-style="italic">t</tspan><tspan x="193.19985961914062" fill="#BEBABF">) </tspan><tspan x="209.99984741210938" fill="#DF61ED">=&gt;</tspan><tspan x="226.79983520507812" fill="#BEBABF"> </tspan><tspan x="235.1998291015625" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="117.6">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">pass</tspan><tspan x="83.99993896484375" fill="#BEBABF">(</tspan><tspan x="92.39993286132812" fill="#61ED99">&#39;I sure hope it does&#39;</tspan><tspan x="268.7998046875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="137.2">
+<tspan x="0" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="176.39999999999998">
+<tspan x="0" fill="#61B5ED">test</tspan><tspan x="33.5999755859375" fill="#BEBABF">(</tspan><tspan x="41.999969482421875" fill="#61ED99">&#39;should know truth values&#39;</tspan><tspan x="260.3998107910156" fill="#BEBABF">, (</tspan><tspan x="285.59979248046875" fill="#ED616F" font-style="italic">t</tspan><tspan x="293.9997863769531" fill="#BEBABF">) </tspan><tspan x="310.7997741699219" fill="#DF61ED">=&gt;</tspan><tspan x="327.5997619628906" fill="#BEBABF"> </tspan><tspan x="335.999755859375" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="195.99999999999997">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">true</tspan><tspan x="83.99993896484375" fill="#BEBABF">(</tspan><tspan x="92.39993286132812" fill="#ED9961">true</tspan><tspan x="125.99990844726562" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="215.59999999999997">
+<tspan x="0" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="254.79999999999998">
+<tspan x="0" fill="#61B5ED">test</tspan><tspan x="33.5999755859375" fill="#BEBABF">(</tspan><tspan x="41.999969482421875" fill="#61ED99">&#39;a number should be itself&#39;</tspan><tspan x="268.7998046875" fill="#BEBABF">, (</tspan><tspan x="293.9997863769531" fill="#ED616F" font-style="italic">t</tspan><tspan x="302.3997802734375" fill="#BEBABF">) </tspan><tspan x="319.19976806640625" fill="#DF61ED">=&gt;</tspan><tspan x="335.999755859375" fill="#BEBABF"> </tspan><tspan x="344.3997497558594" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="274.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">is</tspan><tspan x="67.199951171875" fill="#BEBABF">(</tspan><tspan x="75.59994506835938" fill="#EDDF61">Math</tspan><tspan x="109.19992065429688" fill="#BEBABF">.</tspan><tspan x="117.59991455078125" fill="#ED9961">SQRT2</tspan><tspan x="159.59988403320312" fill="#BEBABF">, </tspan><tspan x="176.39987182617188" fill="#EDDF61">Math</tspan><tspan x="209.99984741210938" fill="#BEBABF">.</tspan><tspan x="218.39984130859375" fill="#ED9961">SQRT2</tspan><tspan x="260.3998107910156" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="293.99999999999994">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">is</tspan><tspan x="67.199951171875" fill="#BEBABF">(</tspan><tspan x="75.59994506835938" fill="#EDDF61">Number</tspan><tspan x="125.99990844726562" fill="#BEBABF">.</tspan><tspan x="134.39990234375" fill="#61B5ED">parseInt</tspan><tspan x="201.599853515625" fill="#BEBABF">(</tspan><tspan x="209.99984741210938" fill="#61ED99">&#39;1&#39;</tspan><tspan x="235.1998291015625" fill="#BEBABF">, </tspan><tspan x="251.99981689453125" fill="#ED9961">10</tspan><tspan x="268.7998046875" fill="#BEBABF">), </tspan><tspan x="293.9997863769531" fill="#ED9961">1</tspan><tspan x="302.3997802734375" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="313.59999999999997">
+<tspan x="0" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="352.79999999999995">
+<tspan x="0" fill="#61B5ED">test</tspan><tspan x="33.5999755859375" fill="#BEBABF">(</tspan><tspan x="41.999969482421875" fill="#61ED99">&#39;can achieve full coverage&#39;</tspan><tspan x="268.7998046875" fill="#BEBABF">, (</tspan><tspan x="293.9997863769531" fill="#ED616F" font-style="italic">t</tspan><tspan x="302.3997802734375" fill="#BEBABF">) </tspan><tspan x="319.19976806640625" fill="#DF61ED">=&gt;</tspan><tspan x="335.999755859375" fill="#BEBABF"> </tspan><tspan x="344.3997497558594" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="372.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">is</tspan><tspan x="67.199951171875" fill="#BEBABF">(</tspan><tspan x="75.59994506835938" fill="#ED616F">example</tspan><tspan x="134.39990234375" fill="#BEBABF">.</tspan><tspan x="142.79989624023438" fill="#61B5ED">fiveFunction</tspan><tspan x="243.59982299804688" fill="#BEBABF">(), </tspan><tspan x="277.1997985839844" fill="#ED9961">5</tspan><tspan x="285.59979248046875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="391.99999999999994">
+<tspan x="0" fill="#BEBABF">});</tspan>
+</text>
+
+<text font-family="Fira Code" font-size="14" y="431.19999999999993">
+<tspan x="0" fill="#61B5ED">test</tspan><tspan x="33.5999755859375" fill="#BEBABF">(</tspan><tspan x="41.999969482421875" fill="#61ED99">&#39;can dynamically import fs&#39;</tspan><tspan x="268.7998046875" fill="#BEBABF">, </tspan><tspan x="285.59979248046875" fill="#DF61ED">async</tspan><tspan x="327.5997619628906" fill="#BEBABF"> </tspan><tspan x="335.999755859375" fill="#BEBABF">(</tspan><tspan x="344.3997497558594" fill="#ED616F" font-style="italic">t</tspan><tspan x="352.79974365234375" fill="#BEBABF">) </tspan><tspan x="369.5997314453125" fill="#DF61ED">=&gt;</tspan><tspan x="386.39971923828125" fill="#BEBABF"> </tspan><tspan x="394.7997131347656" fill="#BEBABF">{</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="450.79999999999995">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#EDDF61">fs</tspan><tspan x="100.7999267578125" fill="#BEBABF"> </tspan><tspan x="109.19992065429688" fill="#61EDDF">=</tspan><tspan x="117.59991455078125" fill="#BEBABF"> </tspan><tspan x="125.99990844726562" fill="#BEBABF">(</tspan><tspan x="134.39990234375" fill="#DF61ED">await</tspan><tspan x="176.39987182617188" fill="#BEBABF"> </tspan><tspan x="184.79986572265625" fill="#61B5ED">import</tspan><tspan x="235.1998291015625" fill="#BEBABF">(</tspan><tspan x="243.59982299804688" fill="#61ED99">&#39;node:fs&#39;</tspan><tspan x="319.19976806640625" fill="#BEBABF">)).</tspan><tspan x="344.3997497558594" fill="#ED616F">promises</tspan><tspan x="411.5997009277344" fill="#BEBABF">;</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="470.4">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#DF61ED">const</tspan><tspan x="75.59994506835938" fill="#BEBABF"> </tspan><tspan x="83.99993896484375" fill="#EDDF61">text</tspan><tspan x="117.59991455078125" fill="#BEBABF"> </tspan><tspan x="125.99990844726562" fill="#61EDDF">=</tspan><tspan x="134.39990234375" fill="#BEBABF"> </tspan><tspan x="142.79989624023438" fill="#DF61ED">await</tspan><tspan x="184.79986572265625" fill="#BEBABF"> </tspan><tspan x="193.19985961914062" fill="#ED616F">fs</tspan><tspan x="209.99984741210938" fill="#BEBABF">.</tspan><tspan x="218.39984130859375" fill="#61B5ED">readFile</tspan><tspan x="285.59979248046875" fill="#BEBABF">(</tspan><tspan x="293.9997863769531" fill="#61ED99">&#39;./test/example.txt&#39;</tspan><tspan x="461.9996643066406" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="489.99999999999994">
+<tspan x="0" fill="#BEBABF">    </tspan><tspan x="33.5999755859375" fill="#ED616F">t</tspan><tspan x="41.999969482421875" fill="#BEBABF">.</tspan><tspan x="50.39996337890625" fill="#61B5ED">is</tspan><tspan x="67.199951171875" fill="#BEBABF">(</tspan><tspan x="75.59994506835938" fill="#ED616F">text</tspan><tspan x="109.19992065429688" fill="#BEBABF">.</tspan><tspan x="117.59991455078125" fill="#EDDF61">BYTES_PER_ELEMENT</tspan><tspan x="260.3998107910156" fill="#BEBABF">, </tspan><tspan x="277.1997985839844" fill="#ED9961">1</tspan><tspan x="285.59979248046875" fill="#BEBABF">);</tspan>
+</text>
+<text font-family="Fira Code" font-size="14" y="509.59999999999997">
+<tspan x="0" fill="#BEBABF">});</tspan>
+</text></g>
+</svg>
