@@ -4,6 +4,10 @@
 	"displayName": "Living Twilight",
 	"description": "A theme for the wee hours of the morning and night",
 	"version": "0.0.1",
+	"icon": "living-twilight.png",
+	"capabilities": {
+		"virtualWorkspaces": true
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/illumincrotty/VSCode-Themes.git"

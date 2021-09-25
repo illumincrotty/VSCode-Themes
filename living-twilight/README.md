@@ -1,5 +1,7 @@
 # Living Twilight
 
+![logo](https://github.com/illumincrotty/VSCode-Themes/blob/eb1617651a2af7674a13b3550220bae0bc626ac8/living-twilight/living-twilight-hi-res.png)
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 Living Twilight is a crepuscular theme for the wee hours of the morning and night. Mostly styled After One Pro but with higher contrast.
