@@ -3,8 +3,8 @@
 	"publisher": "illumincrotty",
 	"displayName": "Living Twilight",
 	"description": "A theme for the wee hours of the morning and night",
-	"version": "0.0.1",
-	"icon": "living-twilight.png",
+	"version": "1.0.0",
+	"icon": "images/living-twilight.png",
 	"capabilities": {
 		"virtualWorkspaces": true
 	},

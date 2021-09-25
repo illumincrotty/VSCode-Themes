@@ -1,6 +1,6 @@
 # Living Twilight
 
-![logo](https://github.com/illumincrotty/VSCode-Themes/blob/eb1617651a2af7674a13b3550220bae0bc626ac8/living-twilight/living-twilight-hi-res.png)
+![logo](images/living-twilight-500-500.png)
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
@@ -8,13 +8,13 @@ Living Twilight is a crepuscular theme for the wee hours of the morning and nigh
 
 ## Screenshots
 
-![benchmark](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/benchmark.ts.png)
+![benchmark](images/benchmark.ts.png)
 
-![style css](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/style.css.png)
+![style css](images/style.css.png)
 
-![prettier json config](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/prettierrc.json.png)
+![prettier json config](images/prettierrc.json.png)
 
-![index.test.ts](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/index.test.ts.png)
+![index.test.ts](images/index.test.ts.png)
 
 ## Color Reference
 
