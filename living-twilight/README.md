@@ -20,16 +20,17 @@ Living Twilight is a crepuscular theme for the wee hours of the morning and nigh
 
 There are only seven colors, plus a specific black and white. Anything else is tones or shades of those reference colors.
 
-| Color          | Hex     | Visual                                                      |
-| -------------- | ------- | ----------------------------------------------------------- |
-| Calypso Coral  | #ed616f | ![#ed616f](https://via.placeholder.com/50x15/ed616f?text=+) |
-| Topaz Yellow   | #ed9961 | ![#ed9961](https://via.placeholder.com/50x15/ed9961?text=+) |
-| Pollination    | #eddf61 | ![#eddf61](https://via.placeholder.com/50x15/eddf61?text=+) |
-| Thallium Flame | #61ed99 | ![#61ed99](https://via.placeholder.com/50x15/61ed99?text=+) |
-| Near Moon      | #61eddf | ![#61eddf](https://via.placeholder.com/50x15/61eddf?text=+) |
-| Blue Jeans     | #61b5ed | ![#61b5ed](https://via.placeholder.com/50x15/61b5ed?text=+) |
-| Gluon Grey     | #1b1b1d | ![#1b1b1d](https://via.placeholder.com/50x15/1b1b1d?text=+) |
-| Ghost White    | #f6f2f7 | ![#f6f2f7](https://via.placeholder.com/50x15/d7d3d8?text=+) |
+| Color            | Hex     | Visual                                                      |
+| --------------   | ------- | ----------------------------------------------------------- |
+| Calypso Coral    | #ed616f | ![#ed616f](https://via.placeholder.com/50x15/ed616f?text=+) |
+| Topaz Yellow     | #ed9961 | ![#ed9961](https://via.placeholder.com/50x15/ed9961?text=+) |
+| Pollination      | #eddf61 | ![#eddf61](https://via.placeholder.com/50x15/eddf61?text=+) |
+| Thallium Flame   | #61ed99 | ![#61ed99](https://via.placeholder.com/50x15/61ed99?text=+) |
+| Near Moon        | #61eddf | ![#61eddf](https://via.placeholder.com/50x15/61eddf?text=+) |
+| Blue Jeans       | #61b5ed | ![#61b5ed](https://via.placeholder.com/50x15/61b5ed?text=+) |
+| Clematis Magenta | #df61ed | ![#df61ed](https://via.placeholder.com/50x15/df61ed?text=+) |
+| Gluon Grey       | #1b1b1d | ![#1b1b1d](https://via.placeholder.com/50x15/1b1b1d?text=+) |
+| Ghost White      | #f6f2f7 | ![#f6f2f7](https://via.placeholder.com/50x15/d7d3d8?text=+) |
 
 ## Acknowledgements
 
