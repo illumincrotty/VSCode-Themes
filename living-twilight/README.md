@@ -6,12 +6,13 @@ Living Twilight is a crepuscular theme for the wee hours of the morning and nigh
 
 ## Screenshots
 
-![benchmark](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/Screenshot%202021-09-24%20at%2002-04-48%20Code%20Samples.png)
+![benchmark](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/benchmark.ts.png)
 
-![generator](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/generator.png)
+![style css](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/style.css.png)
 
-![index.test.ts](https://github.com/illumincrotty/VSCode-Themes/blob/3b41fb1f20a52d0c3c01b3acb400a9f6a128868d/assets/code%20pictures/Screenshot%202021-09-24%20at%2002-05-15%20Code%20Samples.png)
+![prettier json config](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/prettierrc.json.png)
 
+![index.test.ts](https://github.com/illumincrotty/VSCode-Themes/blob/3d63779acb970267cd576547b026a13399b54bea/assets/code%20pictures/index.test.ts.png)
 
 ## Color Reference
 
@@ -26,18 +27,18 @@ There are only seven colors, plus a specific black and white. Anything else is t
 | Near Moon      | #61eddf | ![#61eddf](https://via.placeholder.com/50x15/61eddf?text=+) |
 | Blue Jeans     | #61b5ed | ![#61b5ed](https://via.placeholder.com/50x15/61b5ed?text=+) |
 | Gluon Grey     | #1b1b1d | ![#1b1b1d](https://via.placeholder.com/50x15/1b1b1d?text=+) |
-| Ghost White    | #f6f2f7 | ![#d7d3d8](https://via.placeholder.com/50x15/d7d3d8?text=+) |
+| Ghost White    | #f6f2f7 | ![#f6f2f7](https://via.placeholder.com/50x15/d7d3d8?text=+) |
 
 ## Acknowledgements
 
 - [Color Names Library](https://github.com/meodai/color-names) is a **phenomenal** source for color names
 - [Theme Studio](https://themes.vscode.one) is a wysiwyg editor I used to rough out the design
 - [Colorizer](http://colorizer.org/) is the best color picker/generator/calculator I've used
-<!-- https://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai -->
-<!-- https://shiki.matsu.io/ -->
-<!-- https://github.com/a20185/codechalk -->
-<!-- https://www.skypack.dev/view/scarbon -->
-<!-- https://github.com/shikijs/shiki/tree/main/packages/renderer-svg -->
+    <!-- https://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai -->
+    <!-- https://shiki.matsu.io/ -->
+    <!-- https://github.com/a20185/codechalk -->
+    <!-- https://www.skypack.dev/view/scarbon -->
+    <!-- https://github.com/shikijs/shiki/tree/main/packages/renderer-svg -->
 
 ## Author
 
