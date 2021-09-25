@@ -1,20 +1,20 @@
 # Living Twilight
 
-![logo](images/living-twilight-500-500.png)
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-Living Twilight is a crepuscular theme for the wee hours of the morning and night. Mostly styled After One Pro but with higher contrast.
+![LOGO](https://raw.githubusercontent.com/illumincrotty/VSCode-Themes/master/living-twilight/images/living-twilight-500-500.png)
+
+Living Twilight is a crepuscular theme for the wee hours of the morning and night. Mostly styled After One Dark Pro but with higher contrast, prettier colors, and more consistent color usage.
 
 ## Screenshots
 
-![benchmark](images/benchmark.ts.png)
+![benchmark](https://raw.githubusercontent.com/illumincrotty/VSCode-Themes/master/living-twilight/images/benchmark.ts.png)
 
-![style css](images/style.css.png)
+![style css](https://raw.githubusercontent.com/illumincrotty/VSCode-Themes/master/living-twilight/images/style.css.png)
 
-![prettier json config](images/prettierrc.json.png)
+![prettier json config](https://raw.githubusercontent.com/illumincrotty/VSCode-Themes/master/living-twilight/images/prettierrc.json.png)
 
-![index.test.ts](images/index.test.ts.png)
+![index.test.ts](https://raw.githubusercontent.com/illumincrotty/VSCode-Themes/master/living-twilight/images/index.test.ts.png)
 
 ## Color Reference
 

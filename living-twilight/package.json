@@ -3,16 +3,30 @@
 	"publisher": "illumincrotty",
 	"displayName": "Living Twilight",
 	"description": "A theme for the wee hours of the morning and night",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "images/living-twilight.png",
 	"capabilities": {
 		"virtualWorkspaces": true
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/illumincrotty/VSCode-Themes.git"
+		"url": "https://github.com/illumincrotty/VSCode-Themes"
 	},
-	"keywords": [],
+	"files": [
+		"images",
+		"themes"
+	],
+	"galleryBanner": {
+		"color": "#1b1b1d",
+		"theme": "dark"
+	},
+	"keywords": [
+		"dark",
+		"bright",
+		"clean",
+		"minimal",
+		"pretty"
+	],
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -22,7 +36,8 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "vsce package -o build",
-		"vsce-list": "pnpm list --prod --json"
+		"list": "vsce ls",
+		"publish": "vsce publish"
 	},
 	"contributes": {
 		"themes": [
